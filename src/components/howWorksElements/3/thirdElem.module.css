@@ -1,0 +1,22 @@
+.imgWrapper {
+    width: 150px;
+    height: 150px;
+    border: 6px solid orange;
+    border-radius: 50%;
+    position: relative;
+    overflow: visible;
+}
+
+.fume {
+    border-radius: 50%;
+}
+
+.hookah {
+    position: absolute;
+    bottom: 0;
+    left: 58%;
+    top: -4%;
+    transform: translateX(-50%) scale(1.4);
+    height: 120%;
+    z-index: 1;
+}
