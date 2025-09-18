@@ -1,5 +1,52 @@
+.howWorks {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-block: 90px;
+}
+
+.title {
+    color: #191919;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.selector {
+    color: #9B51E0;
+}
+
 .container {
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 20px;
+}
+
+.howWorkElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.10);
+    min-width: 206px;
+    width: 100%;
+    padding: 25px;
+}
+
+.description {
+    max-height: 110px;
+    height: 100%;
+    max-width: 200px;
+    color: #191919;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
 }

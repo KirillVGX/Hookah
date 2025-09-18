@@ -1,0 +1,21 @@
+.imgWrapper {
+    width: 150px;
+    height: 150px;
+    border: 6px solid orange;
+    border-radius: 50%;
+    position: relative;
+    overflow: visible;
+}
+
+.fume {
+    border-radius: 50%;
+}
+
+.car {
+    position: absolute;
+    left: 69%;
+    top: 25%;
+    transform: translateX(-50%) scale(1.9);
+    z-index: 1;
+    clip-path: inset(0 34% 0 0 round 30px);
+}

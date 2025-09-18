@@ -1,0 +1,118 @@
+.getSection {
+    min-width: 100vw;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+
+    background:
+        linear-gradient(to bottom,
+            hsla(0, 0%, 100%, 0.94),
+            hsla(0, 0%, 100%, 0.74)),
+        url("/images/getBg.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    padding-block: 30px;
+    color: white;
+}
+
+.title {
+    color: #191919;
+    font-family: "Montserrat Alternates";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    max-width: 210px;
+    width: 100%;
+}
+
+.selector {
+    color: #9B51E0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 31px;
+}
+
+.productCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imgWrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 282px;
+    width: 100%;
+    max-height: 198px;
+    height: 100%;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* картинка сохраняет пропорции */
+}
+
+.description {
+    max-width: 282px;
+    width: 100%;
+    max-height: 56px;
+    height: 100%;
+
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+
+    color: #191919;
+
+    font-family: "Montserrat Alternates";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+    padding-block: 14px;
+    padding-inline: 31px;
+}
+
+.order {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid #FFF;
+    background: #F2994A;
+    max-width: 906px;
+    width: 100%;
+    max-height: 90px;
+    height: 100%;
+    padding-inline-start: 25px;
+}
+
+.label {
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

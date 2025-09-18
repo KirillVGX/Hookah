@@ -1,0 +1,32 @@
+.covid {
+    background: url('images/covid.png');
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 1200px;
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    border-radius: 20px;
+    padding-inline-start: 30px;
+    padding-block: 30px;
+    margin-top: 50px;
+}
+
+.title {
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.desciption {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}

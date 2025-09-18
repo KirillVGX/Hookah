@@ -4,7 +4,7 @@ export default function FivethElem() {
     return (
         <div className={styles.imgWrapper}>
             <img className={styles.fume} src="/images/howWorks/5/fume.png" alt="fume" />
-            <img className={styles.hookah} src="/images/howWorks/1/hookah.png" alt="hookah" />
+            <img className={styles.car} src="/images/howWorks/5/car.png" alt="car" />
         </div>
     )
 }
