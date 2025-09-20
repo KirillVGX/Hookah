@@ -1,0 +1,159 @@
+.featuresSection {
+    background-image: url("/images/featuresBg.png");
+    background-size: cover;
+    min-width: 100vw;
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 75px;
+    padding-top: 110px;
+}
+
+.features, .reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.hr {
+    height: 7px;
+    width: 98px;
+    border: none;
+    background: #9B51E0;
+    flex-shrink: 0;
+}
+
+.featuresContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1218px;
+    width: 100%;
+    row-gap: 63px;
+    column-gap: 30px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-height: 74px;
+    height: 100%;
+}
+
+.svgWrapper {
+    max-width: 74px;
+    width: 100%;
+    max-height: 74px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #FFF;
+    filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.08));
+    position: relative;
+    aspect-ratio: 1;
+}
+
+.svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.description {
+    color: #FFF;
+    font-family: "Montserrat Alternates";
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 188px;
+    width: 100%;
+    max-height: 88px;
+    height: 100%;
+}
+
+.reviews {
+    gap: 40px;
+}
+
+.reviewsContainer {
+    --reviewsContainerHeight: 230px;
+    height: var(--reviewsContainerHeight);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: calc(var(--reviewsContainerHeight) / 2 * -1);
+}
+
+.reviewCard {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.10);
+    max-width: 386px;
+    width: 100%;
+    max-height: 230px;
+    height: 100%;
+    padding: 30px 30px 35px 30px;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.userPhoto {
+    max-width: 74px;
+    width: 100%;
+    max-height: 74px;
+    height: 100%;
+    aspect-ratio: 1;
+}
+
+.nameAndStars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.name {
+    color: #9B51E0;
+    font-family: "Montserrat Alternates";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.review {
+    color: #191919;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}

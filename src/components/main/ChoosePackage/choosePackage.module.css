@@ -1,0 +1,100 @@
+.choosePackageSection {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 235px;
+}
+
+.head {
+    color: #000;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.selector {
+    color: #9B51E0;
+}
+
+.plansContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.10);
+    max-width: 386px;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.title {
+    color: #191919;
+    text-align: center;
+    font-family: "Montserrat Alternates";
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.bonus {
+    color: #191919;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.description {
+    color: #191919;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 140%;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}
+
+.price {
+    color: #9B51E0;
+    font-family: "Montserrat Alternates";
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.additional {
+    color: #9B51E0;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.hr {
+    background: lightgrey;
+    height: 3px;
+    border: none;
+    width: 100%;
+}
