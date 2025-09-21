@@ -7,13 +7,13 @@
 .head {
     color: #191919;
     text-align: center;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat Alternates';
     font-size: 42px;
     font-weight: 900;
 }
 
 .selector {
-    color: #9B51E0;
+    color: #9b51e0;
 }
 
 .container {
@@ -44,7 +44,7 @@
     height: 100%;
     aspect-ratio: 1;
     border-radius: 50%;
-    background-color: #FFF;
+    background-color: #fff;
     filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.08));
 }
 
@@ -57,7 +57,7 @@
 
 .title {
     color: #191919;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat Alternates';
     font-size: 18px;
     font-weight: 700;
     margin: 0;
@@ -69,7 +69,7 @@
 .hr {
     height: 1px;
     width: 100%;
-    background-color: #EAEAEA;
+    background-color: #eaeaea;
     border: none;
 }
 

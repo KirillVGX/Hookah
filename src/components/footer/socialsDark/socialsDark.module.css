@@ -1,20 +1,27 @@
 .socials {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 49px;
     align-items: center;
+    min-width: 320px;
+}
+
+.fbAndInst {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .socialsOrange {
-    max-width: 36px;
-    max-height: 36px;
-    width: 100%;
-    height: 100%;
+    position: relative;
+    width: 36px;
+    height: 36px;
     background-color: hsla(28, 87%, 62%, 1);
     border-radius: 50%;
-    position: relative;
     flex-shrink: 0;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -22,7 +29,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    translate: -50% -50%;
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 18px;
 }
 
 .viberInner {
@@ -35,7 +44,7 @@
 .viberPuddle {
     background-color: white;
     border-radius: 50%;
-    border: 3px solid #FFF;
+    border: 3px solid #fff;
     z-index: 1;
 }
 
@@ -49,13 +58,10 @@
 
 .number {
     color: #000;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat Alternates';
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
-    max-width: 182px;
+    max-width: 170px;
     width: 100%;
-    text-wrap: nowrap;
     z-index: 1;
 }

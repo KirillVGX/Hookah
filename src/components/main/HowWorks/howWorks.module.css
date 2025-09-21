@@ -8,7 +8,7 @@
 .title {
     color: #191919;
     text-align: center;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat Alternates';
     font-size: 42px;
     font-style: normal;
     font-weight: 900;
@@ -16,7 +16,7 @@
 }
 
 .selector {
-    color: #9B51E0;
+    color: #9b51e0;
 }
 
 .container {
@@ -31,8 +31,8 @@
     align-items: center;
     row-gap: 40px;
     border-radius: 15px;
-    background: #FFF;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.10);
+    background: #fff;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
     min-width: 206px;
     width: 100%;
     padding: 25px;

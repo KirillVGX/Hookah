@@ -1,15 +1,8 @@
 .hero {
-    /* gap: 20px; */
-    justify-content: center;
-    /* max-width: 500px; */
-    width: 100%;
-
     display: flex;
     flex-direction: row;
-    /* gap: 182px; */
-    /* max-height: 130px; */
-    /* height: 100%; */
-    /* width: fit-content; */
+    justify-content: center;
+    width: 100%;
     flex: 1;
 }
 
@@ -47,10 +40,8 @@
 }
 
 .imageInner {
-    /* flex: 1; */
     position: relative;
     width: 50%;
-    /* overflow-x: hidden; */
 }
 
 .image {

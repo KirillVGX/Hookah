@@ -1,6 +1,5 @@
-import HeaderNav from "./headerNav/HeaderNav";
-import Hero from "./hero/Hero";
-import styles from './header.module.css'
+import HeaderNav from './headerNav/HeaderNav';
+import Hero from './hero/Hero';
 
 export default function Header() {
     return (
@@ -8,5 +7,5 @@ export default function Header() {
             <HeaderNav />
             <Hero />
         </header>
-    )
+    );
 }

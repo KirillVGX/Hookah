@@ -1,5 +1,5 @@
 .featuresSection {
-    background-image: url("/images/featuresBg.png");
+    background-image: url('/images/featuresBg.png');
     background-size: cover;
     min-width: 100vw;
     width: 100%;
@@ -13,7 +13,8 @@
     padding-top: 110px;
 }
 
-.features, .reviews{
+.features,
+.reviews {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,9 +29,9 @@
 }
 
 .title {
-    color: #FFF;
+    color: #fff;
     text-align: center;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat Alternates';
     font-size: 42px;
     font-weight: 900;
 }
@@ -39,7 +40,7 @@
     height: 7px;
     width: 98px;
     border: none;
-    background: #9B51E0;
+    background: #9b51e0;
     flex-shrink: 0;
 }
 
@@ -66,7 +67,7 @@
     max-height: 74px;
     height: 100%;
     border-radius: 50%;
-    background-color: #FFF;
+    background-color: #fff;
     filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.08));
     position: relative;
     aspect-ratio: 1;
@@ -80,8 +81,8 @@
 }
 
 .description {
-    color: #FFF;
-    font-family: "Montserrat Alternates";
+    color: #fff;
+    font-family: 'Montserrat Alternates';
     font-size: 18px;
     font-weight: 700;
     max-width: 188px;
@@ -108,8 +109,8 @@
     flex-direction: column;
     gap: 25px;
     border-radius: 15px;
-    background: #FFF;
-    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.10);
+    background: #fff;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.1);
     max-width: 386px;
     width: 100%;
     max-height: 230px;
@@ -138,8 +139,8 @@
 }
 
 .name {
-    color: #9B51E0;
-    font-family: "Montserrat Alternates";
+    color: #9b51e0;
+    font-family: 'Montserrat Alternates';
     font-size: 20px;
     font-weight: 700;
 }

@@ -8,9 +8,6 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
-
-    /* overflow: hidden; */
     color: #191919;
-
     margin-bottom: 200px;
 }

@@ -5,10 +5,12 @@
     height: 100%;
 
     background:
-        linear-gradient(to bottom,
+        linear-gradient(
+            to bottom,
             hsla(0, 0%, 100%, 0.94),
-            hsla(0, 0%, 100%, 0.74)),
-        url("/images/getBg.png");
+            hsla(0, 0%, 100%, 0.74)
+        ),
+        url('/images/getBg.png');
     background-size: cover;
     background-position: center;
 
@@ -22,7 +24,7 @@
 
 .title {
     color: #191919;
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat Alternates';
     font-size: 42px;
     font-style: normal;
     font-weight: 900;
@@ -32,7 +34,7 @@
 }
 
 .selector {
-    color: #9B51E0;
+    color: #9b51e0;
 }
 
 .content {
@@ -77,12 +79,12 @@
     height: 100%;
 
     border-radius: 15px;
-    background: #FFF;
+    background: #fff;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
 
     color: #191919;
 
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat Alternates';
     font-size: 22px;
     font-style: normal;
     font-weight: 700;
@@ -99,8 +101,8 @@
     gap: 20px;
     align-items: center;
     border-radius: 15px;
-    border: 3px solid #FFF;
-    background: #F2994A;
+    border: 3px solid #fff;
+    background: #f2994a;
     max-width: 906px;
     width: 100%;
     max-height: 90px;
@@ -109,8 +111,8 @@
 }
 
 .label {
-    color: #FFF;
-    font-family: "Montserrat Alternates";
+    color: #fff;
+    font-family: 'Montserrat Alternates';
     font-size: 22px;
     font-style: normal;
     font-weight: 700;

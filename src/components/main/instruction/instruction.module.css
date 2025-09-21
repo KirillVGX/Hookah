@@ -27,7 +27,7 @@
 }
 
 .instruction .block:nth-child(3) .description {
-    font-family: "Montserrat Alternates";
+    font-family: 'Montserrat Alternates';
     font-size: 24px;
     font-weight: 700;
     line-height: 100%;
@@ -49,8 +49,8 @@
     top: 50%;
     left: 50%;
     translate: -50% -50%;
-    color: #FFF;
-    font-family: "Montserrat Alternates";
+    color: #fff;
+    font-family: 'Montserrat Alternates';
     font-size: 20px;
     font-weight: 700;
 }

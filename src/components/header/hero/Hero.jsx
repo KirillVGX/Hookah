@@ -1,6 +1,5 @@
-import styles from './hero.module.css'
-import hookah from '../../../assets/images/header/hookah.png';
-import HeroButton from './heroButton/HeroButton'
+import styles from './hero.module.css';
+import HeroButton from './heroButton/HeroButton';
 
 export default function Hero() {
     return (
@@ -10,14 +9,18 @@ export default function Hero() {
                     Hookah rentals with delivery in Miami and Fort Lauderdale
                 </h1>
                 <h5 className={styles.description}>
-                    We’ll deliver the hookah, set it up and leave it to you 
+                    We’ll deliver the hookah, set it up and leave it to you
                     <span className={styles.marker}> for 24 hours.</span>
                 </h5>
-                <HeroButton text='Order service'/>
+                <HeroButton text="Order service" />
             </div>
             <div className={styles.imageInner}>
-                <img className={styles.image} src={hookah} alt="hookah" />
+                <img
+                    className={styles.image}
+                    src="./images/header/hookah.png"
+                    alt="hookah"
+                />
             </div>
         </div>
-    )
+    );
 }
