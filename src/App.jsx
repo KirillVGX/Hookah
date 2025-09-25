@@ -12,7 +12,7 @@ import TabsSection from './components/header/headerNav/tabsSection/TabsSection';
 import Socials from './components/header/headerNav/socials/Socials';
 
 export default function App() {
-    const [tab, setTab] = useState('main');
+    const [tab, setTab] = useState('catering');
 
     return (
         <>

@@ -1,0 +1,247 @@
+.AmountHookahsSection {
+    background-image: url('/images/calc.png');
+    background-size: cover;
+    min-width: 100vw;
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.AmountHookahsSection > *:nth-child(4) {
+    margin-top: 26px;
+}
+
+.AmountHookahsSection > *:nth-child(5) {
+    margin-top: 46px;
+}
+
+.AmountHookahsSection > *:nth-child(6) {
+    margin-top: 39px;
+}
+
+.AmountHookahsSection > *:nth-child(7) {
+    margin-top: 30px;
+}
+
+.AmountHookahsSection > *:nth-child(8) {
+    margin-top: 25px;
+}
+
+.AmountHookahsSection > *:nth-child(9) {
+    margin-top: 5px;
+}
+
+.title {
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.desciption {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    margin-top: 45px;
+    max-width: 81%;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 208px;
+}
+
+.button:last-child {
+    max-width: 312px;
+}
+
+.button:last-child .amountBtn {
+    padding: 14px 0;
+}
+
+.amountBtn {
+    padding: 14px 40px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    color: #191919;
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.desciptionBtn {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+}
+
+.hr {
+    background-color: #adadad;
+    border: none;
+    height: 1px;
+    width: 81%;
+}
+
+.calcDiv {
+    display: flex;
+    flex-direction: row;
+    max-width: 81%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.amountCatering {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 595px;
+    width: 100%;
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+}
+
+.timeLabel {
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.hours {
+    color: #f2994a;
+    font-family: 'Montserrat Alternates';
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.slider {
+    position: relative;
+    height: 5px;
+    background: #4d1086;
+    border-radius: 3px;
+    max-width: 595px;
+    width: 100%;
+    margin: 24px 0;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.sliderMarks {
+    position: absolute;
+    top: 50%; 
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 0 1px;
+}
+
+.sliderMarks span {
+    width: 20px;
+    position: relative;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    transform: translateY(20px); 
+}
+
+.sliderMarks span::before {
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 5px;
+    background: #C28BF6;
+}
+
+.sliderMarks span:first-child::before,
+.sliderMarks span:last-child::before {
+    content: none;
+}
+
+.fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(90deg, #7b3fe4, #d06fff);
+    border-radius: 6px 0 0 6px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.thumb {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background: #f2994a;
+    cursor: pointer;
+    z-index: 3;
+    touch-action: none;
+}
+
+.priceCatering {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.priceLabel {
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 218px;
+}
+
+.price {
+    color: #f2994a;
+    font-family: 'Montserrat Alternates';
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.warning,
+.warningPs {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}

@@ -60,7 +60,7 @@ export default function ChoosePackage() {
                             </h5>
                         </div>
                         <hr className={styles.hr} />
-                        <HeroButton text={plan.buttonTxt} />
+                        <HeroButton text={plan.buttonTxt} maxWidth="320px" />
                     </div>
                 ))}
             </div>

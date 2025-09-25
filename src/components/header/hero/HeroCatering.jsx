@@ -1,25 +1,23 @@
 import styles from './hero.module.css';
 import HeroButton from './heroButton/HeroButton';
 
-const heroImg = './images/header/heroCatering/png';
-
 export default function HeroCatering() {
     return (
         <div className={styles.hero}>
             <div className={styles.content}>
                 <h1 className={styles.mainText}>
-                    Hookah rentals with delivery in Miami and Fort Lauderdale
+                    Hookah catering in Miami and all SoFlo
                 </h1>
                 <h5 className={styles.description}>
-                    We’ll deliver the hookah, set it up and leave it to you
-                    <span className={styles.marker}> for 24 hours.</span>
+                    We bring exceptional hookah experience
+                    <span className={styles.marker}> to your event</span>
                 </h5>
                 <HeroButton text="Order service" />
             </div>
             <div className={styles.imageInner}>
                 <img
-                    className={styles.image}
-                    src={heroImg}
+                    className={`${styles.image} ${styles.imageCatering}`}
+                    src="./images/header/heroCatering.png"
                     alt="hookah"
                 />
             </div>

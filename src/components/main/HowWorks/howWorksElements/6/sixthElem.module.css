@@ -1,0 +1,21 @@
+.imgWrapper {
+    width: 150px;
+    height: 150px;
+    border: 6px solid orange;
+    border-radius: 50%;
+    position: relative;
+    overflow: visible;
+}
+
+.fume {
+    border-radius: 50%;
+}
+
+.man {
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    transform: translateX(-50%) scale(1.4);
+    z-index: 1;
+    clip-path: inset(0 14% 39% 14% round 52px);
+}
