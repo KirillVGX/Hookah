@@ -28,6 +28,14 @@
     flex-direction: column;
     gap: 20px;
     max-width: 282px;
+    transition: all 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.block:hover {
+    transform: scale(1.04) translateY(-2px);
+    box-shadow: 0 0 20px rgb(219, 215, 215);
+    border-radius: 10px;
 }
 
 .txtContainer {

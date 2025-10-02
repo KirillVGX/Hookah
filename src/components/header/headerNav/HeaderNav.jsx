@@ -1,5 +1,4 @@
 import styles from './headerNav.module.css';
-import Button from './button/Button';
 import Socials from './socials/Socials';
 
 export default function HeaderNav() {
@@ -10,7 +9,6 @@ export default function HeaderNav() {
                     src="./images/logo.svg"
                     className={styles.logo}
                 />
-                <Button />
             </div>
             <Socials />
         </nav>

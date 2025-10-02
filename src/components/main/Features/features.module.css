@@ -59,6 +59,11 @@
     gap: 20px;
     max-height: 74px;
     height: 100%;
+    transition: 0.3s ease;
+}
+
+.feature:hover {
+    transform: scale(1.1) translateY(-3px);
 }
 
 .svgWrapper {

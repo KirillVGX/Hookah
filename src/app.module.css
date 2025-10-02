@@ -33,4 +33,10 @@ header {
     max-height: 110px;
     height: 100%;
     margin-top: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.2);
 }

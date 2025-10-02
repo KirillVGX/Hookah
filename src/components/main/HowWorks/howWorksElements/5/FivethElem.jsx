@@ -1,8 +1,8 @@
 import styles from './fivethElem.module.css';
 
-export default function FivethElem() {
+export default function FivethElem({ active }) {
     return (
-        <div className={styles.imgWrapper}>
+        <div className={`${styles.imgWrapper} ${active ? styles.active : ''}`}>
             <img
                 className={styles.fume}
                 src="/images/howWorks/5/fume.png"

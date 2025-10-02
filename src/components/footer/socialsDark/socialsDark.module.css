@@ -23,6 +23,12 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.socialsOrange:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px hsla(28, 87%, 62%, 1);
 }
 
 .socialsItems {
@@ -46,6 +52,12 @@
     border-radius: 50%;
     border: 3px solid #fff;
     z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.viberPuddle:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px hsla(271, 70%, 60%, 1);
 }
 
 .viber {

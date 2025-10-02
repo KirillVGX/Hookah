@@ -36,6 +36,8 @@
     min-width: 206px;
     width: 100%;
     padding: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 24px rgb(224, 220, 220);
 }
 
 .description {
@@ -47,6 +49,17 @@
     font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 140%;
+    transition: all 0.3s ease;
+}
+
+.howWorkElement:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 0 24px rgb(185, 182, 182);
+}
+
+.howWorkElement:hover .description {
+    color: #9b51e0;
+    font-weight: 800;
 }

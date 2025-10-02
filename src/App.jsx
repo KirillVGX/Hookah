@@ -24,7 +24,7 @@ export default function App() {
                             className={styles.logo}
                         />
                         <TabsSection
-                            active={tab}
+                            isActive={tab}
                             onChange={(current) => setTab(current)}
                         />
                     </div>

@@ -53,6 +53,11 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    transition: all ease 0.3s;
+}
+
+.productCard:hover {
+    transform: scale(1.1);
 }
 
 .imgWrapper {
@@ -108,6 +113,12 @@
     max-height: 90px;
     height: 100%;
     padding-inline-start: 25px;
+    transition: all 0.3s ease;
+}
+
+.order:hover {
+    transform: scale(1.01) translateY(-2px);
+    box-shadow: 0 0 40px #f2994a;
 }
 
 .label {

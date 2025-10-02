@@ -1,8 +1,8 @@
 import styles from './thirdElem.module.css';
 
-export default function ThirdElem() {
+export default function ThirdElem({ active }) {
     return (
-        <div className={styles.imgWrapper}>
+        <div className={`${styles.imgWrapper} ${active ? styles.active : ''}`}>
             <img
                 className={styles.fume}
                 src="/images/howWorks/1/fume.png"

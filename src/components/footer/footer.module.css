@@ -14,6 +14,15 @@
     align-items: center;
 }
 
+.logo {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
 .info {
     display: flex;
     flex-direction: row;
@@ -28,6 +37,11 @@
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.blog:hover {
+    transform: scale(1.2);
 }
 
 .meta {
@@ -35,6 +49,7 @@
     flex-direction: column;
     gap: 5px;
     align-items: end;
+    justify-content: center;
 }
 
 .location {

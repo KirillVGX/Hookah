@@ -9,7 +9,6 @@ const steps = [
         text: 'We will deliver complete hookah set with all accessories to you, start it up and show how to use it',
         id: 2,
     },
-    { text: "All you'll have to do is to relax, enjoying the hookah!", id: 3 },
 ];
 
 export default function Instruction() {
@@ -26,6 +25,14 @@ export default function Instruction() {
                     </span>
                 </div>
             ))}
+            <div className={styles.block}>
+                <h5 className={styles.description}>
+                    All you'll have to do is to relax, enjoying the hookah!
+                </h5>
+                <span className={styles.number}>
+                    <p className={styles.numberText}>3</p>
+                </span>
+            </div>
         </section>
     );
 }

@@ -40,6 +40,12 @@
     font-size: 14px;
     font-weight: 900;
     text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 16px #f2994a;
 }
 
 .gallery {

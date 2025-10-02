@@ -1,8 +1,8 @@
 import styles from './sixthElem.module.css';
 
-export default function SixthElem() {
+export default function SixthElem({ active }) {
     return (
-        <div className={styles.imgWrapper}>
+        <div className={`${styles.imgWrapper} ${active ? styles.active : ''}`}>
             <img
                 className={styles.fume}
                 src="/images/howWorks/6/fume.png"

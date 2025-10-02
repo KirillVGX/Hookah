@@ -5,6 +5,11 @@
     border-radius: 50%;
     position: relative;
     overflow: visible;
+    transition: 0.3s;
+}
+
+.active {
+    border: 6px solid #9b51e0;
 }
 
 .fume {

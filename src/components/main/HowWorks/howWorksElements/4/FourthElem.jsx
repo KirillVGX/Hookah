@@ -23,9 +23,9 @@ const iconsData = [
     },
 ];
 
-export default function FourthElem() {
+export default function FourthElem({ active }) {
     return (
-        <div className={styles.imgWrapper}>
+        <div className={`${styles.imgWrapper} ${active ? styles.active : ''}`}>
             <img
                 className={styles.fume}
                 src="/images/howWorks/4/fume.png"

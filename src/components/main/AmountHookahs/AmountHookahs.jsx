@@ -31,12 +31,14 @@ const buttons = [
 ];
 
 export default function AmountHookahs() {
+    const [activeId, setActiveId] = useState(null);
+
     const sliderRef = useRef(null);
     const thumbRef = useRef(null);
     const fillRef = useRef(null);
     const shiftXRef = useRef(0);
 
-    const [value, setValue] = useState(1); // текущая выбранная цифра
+    const [value, setValue] = useState(1);
 
     useEffect(() => {
         const slider = sliderRef.current;
@@ -121,7 +123,12 @@ export default function AmountHookahs() {
                         className={styles.button}
                         key={btn.id}
                     >
-                        <button className={styles.amountBtn}>
+                        <button
+                            className={`${styles.amountBtn} ${
+                                activeId === btn.id ? styles.active : ''
+                            }`}
+                            onClick={() => setActiveId(btn.id)}
+                        >
                             {btn.btnTxt}
                         </button>
                         <p className={styles.desciptionBtn}>{btn.btnD}</p>
