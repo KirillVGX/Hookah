@@ -2,7 +2,7 @@ import './styles/normalize.css';
 import './styles/globals.css';
 import './styles/fonts.css';
 import Main from './pages/main';
-import Catering from './pages/Catering';
+import Catering from './pages/catering';
 import { useState } from 'react';
 import styles from './app.module.css';
 
