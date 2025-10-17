@@ -12,7 +12,7 @@ export default function Main() {
         <main className={styles.main}>
             <Instruction />
             <HowWorks />
-            <Gets />
+            <Gets className={styles.gets} />
             <Covid />
             <Reason />
             <Features />

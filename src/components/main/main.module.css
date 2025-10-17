@@ -6,7 +6,6 @@
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
     color: #191919;
     margin-bottom: 200px;
@@ -16,5 +15,5 @@
     border: none;
     height: 2px;
     width: 100%;
-    background: #EAEAEA;
+    background: #eaeaea;
 }

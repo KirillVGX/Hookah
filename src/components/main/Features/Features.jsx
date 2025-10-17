@@ -1,4 +1,9 @@
 import styles from './features.module.css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const features = [
     {
@@ -106,42 +111,82 @@ export default function Features() {
                     ))}
                 </div>
             </div>
-            <div className={styles.reviews}>
-                <h2 className={styles.title}>Reviews</h2>
-                <div className={styles.reviewsContainer}>
-                    {reviews.map((review) => (
-                        <div
-                            className={styles.reviewCard}
-                            key={review.id}
-                        >
-                            <div className={styles.userInfo}>
-                                <img
-                                    className={styles.userPhoto}
-                                    src={review.photo}
-                                    alt={review.alt}
-                                />
-                                <div className={styles.nameAndStars}>
-                                    <h4 className={styles.name}>
-                                        {review.name}
-                                    </h4>
-                                    <div className={styles.stars}>
-                                        {Array.from({
-                                            length: review.stars,
-                                        }).map((_, i) => (
+
+            <div className={`${styles.reviewsContainer} ${styles.desktopOnly}`}>
+                {reviews.map((review) => (
+                    <div
+                        className={styles.reviewCard}
+                        key={review.id}
+                    >
+                        <div className={styles.userInfo}>
+                            <img
+                                className={styles.userPhoto}
+                                src={review.photo}
+                                alt={review.alt}
+                            />
+                            <div className={styles.nameAndStars}>
+                                <h4 className={styles.name}>{review.name}</h4>
+                                <div className={styles.stars}>
+                                    {Array.from({ length: review.stars }).map(
+                                        (_, i) => (
                                             <img
                                                 key={i}
                                                 src="./images/star.svg"
                                                 alt="star"
                                                 className={styles.starIcon}
                                             />
-                                        ))}
-                                    </div>
+                                        )
+                                    )}
                                 </div>
                             </div>
-                            <p className={styles.review}>{review.review}</p>
                         </div>
+                        <p className={styles.review}>{review.review}</p>
+                    </div>
+                ))}
+            </div>
+
+            {/* Мобильная версия (слайдер) */}
+            <div className={`${styles.reviewsSlider} ${styles.mobileOnly}`}>
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    loop={true}
+                >
+                    {reviews.map((review) => (
+                        <SwiperSlide key={review.id}>
+                            <div className={styles.reviewCard}>
+                                <div className={styles.userInfo}>
+                                    <img
+                                        className={styles.userPhoto}
+                                        src={review.photo}
+                                        alt={review.alt}
+                                    />
+                                    <div className={styles.nameAndStars}>
+                                        <h4 className={styles.name}>
+                                            {review.name}
+                                        </h4>
+                                        <div className={styles.stars}>
+                                            {Array.from({
+                                                length: review.stars,
+                                            }).map((_, i) => (
+                                                <img
+                                                    key={i}
+                                                    src="./images/star.svg"
+                                                    alt="star"
+                                                    className={styles.starIcon}
+                                                />
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+                                <p className={styles.review}>{review.review}</p>
+                            </div>
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
             </div>
         </section>
     );

@@ -3,6 +3,7 @@
     flex-direction: row;
     gap: 130px;
     padding-block: 90px;
+    padding-inline: 39px;
 }
 
 .aboutWrapper {
@@ -60,4 +61,34 @@
 
 .highlight {
     color: #9b51e0;
+}
+
+@media (max-width: 768px) {
+    .AboutServiceSection {
+        flex-direction: column;
+        row-gap: 20px;
+        padding-block: 60px;
+    }
+
+    .aboutWrapper {
+        display: contents;
+        max-width: none;
+    }
+
+    .slideInner {
+        max-width: none;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .desciption {
+        font-size: 15px;
+    }
+
+    .desciptionBold {
+        font-size: 15px;
+    }
 }

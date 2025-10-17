@@ -36,3 +36,10 @@
     transform: translateY(-2px);
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    .tabButton {
+        max-width: 210px;
+        max-height: 54px;
+    }
+}

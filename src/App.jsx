@@ -26,9 +26,10 @@ export default function App() {
                         <TabsSection
                             isActive={tab}
                             onChange={(current) => setTab(current)}
+                            className={styles.tabsSection}
                         />
                     </div>
-                    <Socials />
+                    <Socials className={styles.socials} />
                 </nav>
                 {tab === 'main' && <Hero />}
                 {tab === 'catering' && <HeroCatering />}

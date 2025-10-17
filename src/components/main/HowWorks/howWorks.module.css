@@ -63,3 +63,26 @@
     color: #9b51e0;
     font-weight: 800;
 }
+
+@media (max-width: 1225px) {
+    .howWorks {
+        margin-inline: 39px;
+        padding-block: 60px 90px;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .howWorkElement {
+        max-width: 210px;
+        max-height: 340px;
+        gap: 25px;
+        padding-inline: 5px;
+    }
+
+    .description {
+        font-style: 15px;
+    }
+}

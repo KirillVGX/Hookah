@@ -20,7 +20,6 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 100%;
-    letter-spacing: 0%;
 }
 
 .description {
@@ -55,4 +54,44 @@
 .imageCatering {
     transform: scale(1.1);
     top: -5%;
+}
+
+@media (max-width: 1225px) {
+    .content {
+        margin-inline: 40px;
+    }
+
+    .image {
+        top: -40%;
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        position: relative;
+    }
+
+    .imageInner {
+        position: absolute;
+    }
+
+    .content {
+        justify-content: start;
+        margin-top: 150px;
+    }
+
+    .mainText {
+        max-width: none;
+    }
+
+    .description {
+        max-width: 327px;
+    }
+
+    .image {
+        top: 0;
+        left: 40%;
+        /* transform: scale(1.3); */
+    }
 }

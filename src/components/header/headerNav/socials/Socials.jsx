@@ -1,8 +1,8 @@
 import styles from './socials.module.css';
 
-export default function Socials() {
+export default function Socials({ className }) {
     return (
-        <div className={styles.socials}>
+        <div className={[styles.socials, className].join(' ')}>
             <div className={styles.fbAndInst}>
                 <span className={styles.socialsOrange}>
                     <img

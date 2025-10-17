@@ -1,8 +1,8 @@
 import styles from './tabsSection.module.css';
 
-export default function Button({ isActive, onChange }) {
+export default function Button({ isActive, onChange, className }) {
     return (
-        <div className={styles.buttonContainer}>
+        <div className={[styles.buttonContainer, className].join(' ')}>
             <button
                 className={`${styles.tabButton} ${isActive === 'main' ? styles.tabButtonActive : ''}`}
                 onClick={() => onChange('main')}

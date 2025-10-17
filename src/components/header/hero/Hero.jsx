@@ -1,7 +1,19 @@
 import styles from './hero.module.css';
 import HeroButton from './heroButton/HeroButton';
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
+    const [isLarge, setIsLarge] = useState(window.innerWidth > 1225);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsLarge(window.innerWidth > 1225);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <div className={styles.hero}>
             <div className={styles.content}>
@@ -17,7 +29,11 @@ export default function Hero() {
             <div className={styles.imageInner}>
                 <img
                     className={styles.image}
-                    src="./images/header/hookah.png"
+                    src={
+                        isLarge
+                            ? './images/header/hookah.png'
+                            : './images/header/hookahM.png'
+                    }
                     alt="hookah"
                 />
             </div>

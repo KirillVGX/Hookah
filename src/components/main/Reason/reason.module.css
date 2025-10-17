@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 55px;
     padding-block: 90px;
+    padding-inline: 40px;
 }
 
 .head {
@@ -67,7 +68,6 @@
     margin: 0;
     max-height: 44px;
     height: 100%;
-    /* border-bottom: 1px solid #EAEAEA; */
 }
 
 .hr {
@@ -83,4 +83,36 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
+}
+
+@media (max-width: 1225px) {
+    .head {
+        font-size: 36px;
+    }
+
+    .reason {
+        max-width: 290px;
+    }
+
+    .title {
+        max-height: 88px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reason {
+        max-width: 210px;
+    }
+
+    .title {
+        min-height: 72px;
+        max-height: none;
+        /* height: min-content; */
+        height: fit-content;
+        font-size: 16px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
 }
