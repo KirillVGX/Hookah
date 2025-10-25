@@ -1,7 +1,7 @@
 import './styles/normalize.css';
 import './styles/globals.css';
 import './styles/fonts.css';
-import Main from './pages/main';
+import Delivery from './pages/delivery';
 import Catering from './pages/catering';
 import { useState } from 'react';
 import styles from './app.module.css';
@@ -16,7 +16,7 @@ export default function App() {
 
     return (
         <>
-            <header className="header">
+            {/* <header className="header">
                 <nav className={styles.nav}>
                     <div className={styles.logoButtons}>
                         <img
@@ -33,9 +33,9 @@ export default function App() {
                 </nav>
                 {tab === 'main' && <Hero />}
                 {tab === 'catering' && <HeroCatering />}
-            </header>
+            </header> */}
 
-            {tab === 'main' && <Main />}
+            {tab === 'main' && <Delivery />}
             {tab === 'catering' && <Catering />}
         </>
     );

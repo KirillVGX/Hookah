@@ -1,0 +1,57 @@
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 208px;
+    transition: 0.3s ease;
+}
+
+.button:last-child {
+    max-width: 312px;
+}
+
+.button:last-child .amountBtn {
+    padding: 14px 0;
+}
+
+.amountBtn {
+    padding: 14px 40px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    color: #191919;
+    text-align: center;
+    font-family: 'Montserrat Alternates';
+    font-size: 22px;
+    font-weight: 900;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.amountBtn:hover {
+    background-color: #f7f3fc;
+    box-shadow: 0 0 12px rgba(155, 81, 224, 0.4);
+    transform: scale(1.04);
+}
+
+.amountBtn.active:hover {
+    background-color: #9b51e0; /* тот же цвет, что у active */
+    box-shadow: 0 0 16px #9b51e0;
+    color: #fff;
+}
+
+.active {
+    background-color: #9b51e0;
+    box-shadow: 0 0 16px #9b51e0;
+    color: #fff;
+}
+
+.desciptionBtn {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+}

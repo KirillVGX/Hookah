@@ -1,0 +1,130 @@
+.AmountHookahsSection {
+    background-image: url('/images/calc.png');
+    background-size: cover;
+    min-width: 100vw;
+    width: 100%;
+    min-height: 90vh;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-inline: 39px;
+}
+
+.AmountHookahsSection > *:nth-child(4) {
+    margin-top: 26px;
+}
+
+.AmountHookahsSection > *:nth-child(5) {
+    margin-top: 46px;
+}
+
+.AmountHookahsSection > *:nth-child(6) {
+    margin-top: 39px;
+}
+
+.AmountHookahsSection > *:nth-child(7) {
+    margin-top: 30px;
+}
+
+.AmountHookahsSection > *:nth-child(8) {
+    margin-top: 25px;
+}
+
+.AmountHookahsSection > *:nth-child(9) {
+    margin-top: 5px;
+}
+
+.title {
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.desciption {
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 19px;
+    margin-top: 45px;
+    max-width: 81%;
+}
+
+.hr {
+    background-color: #adadad;
+    border: none;
+    height: 1px;
+    width: 81%;
+}
+
+.calcDiv {
+    display: flex;
+    flex-direction: row;
+    max-width: 81%;
+    width: 100%;
+    justify-content: space-between;
+}
+.priceCatering {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.priceLabel {
+    color: #fff;
+    font-family: 'Montserrat Alternates';
+    font-size: 18px;
+    font-weight: 700;
+    max-width: 218px;
+}
+
+.price {
+    color: #f2994a;
+    font-family: 'Montserrat Alternates';
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.warning,
+.warningPs {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .desciption {
+        font-size: 13.5px;
+    }
+
+    .buttons {
+        max-width: none;
+    }
+
+    .button {
+        max-width: 130px;
+    }
+
+    .amountBtn {
+        font-size: 16px;
+        padding-inline: 0;
+    }
+}
