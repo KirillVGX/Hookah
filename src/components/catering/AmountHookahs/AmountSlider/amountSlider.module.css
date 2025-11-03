@@ -111,3 +111,18 @@
     z-index: 3;
     touch-action: none;
 }
+
+@media (max-width: 1225px) {
+    .amountCatering {
+        max-width: none;
+        gap: 5px;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+
+    .sliderMarks span::before {
+        top: -22px;
+    }
+}

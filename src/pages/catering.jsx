@@ -14,15 +14,15 @@ export default function Catering() {
     return (
         <>
             <main className={styles.main} style={{marginBottom: '150px'}}>
-                {/* <AboutService />
+                <AboutService />
                 <hr className={styles.hr} />
-                <HowWorksCatering /> */}
+                <HowWorksCatering />
                 <AmountHookahs />
-                {/* <Inclusions />
+                <Inclusions />
                 <Advantages />
                 <Gallery />
                 <hr className={styles.hr} />
-                <ContactUs /> */}
+                <ContactUs />
             </main>
             <Footer />
         </>

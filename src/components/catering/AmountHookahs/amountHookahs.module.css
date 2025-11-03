@@ -52,14 +52,7 @@
     font-weight: 400;
     line-height: 140%;
     margin-top: 10px;
-}
-
-.buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 19px;
-    margin-top: 45px;
-    max-width: 81%;
+    opacity: 0.7;
 }
 
 .hr {
@@ -104,6 +97,30 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
+}
+
+@media (max-width: 1225px) {
+    .title {
+        font-size: 35px;
+    }
+
+    .calcDiv {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .priceCatering {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .priceLabel {
+        max-width: none;
+    }
+
+    .price {
+        font-size: 32px;
+    }
 }
 
 @media (max-width: 768px) {

@@ -16,7 +16,7 @@ export default function App() {
 
     return (
         <>
-            {/* <header className="header">
+            <header className="header">
                 <nav className={styles.nav}>
                     <div className={styles.logoButtons}>
                         <img
@@ -33,7 +33,7 @@ export default function App() {
                 </nav>
                 {tab === 'main' && <Hero />}
                 {tab === 'catering' && <HeroCatering />}
-            </header> */}
+            </header>
 
             {tab === 'main' && <Delivery />}
             {tab === 'catering' && <Catering />}

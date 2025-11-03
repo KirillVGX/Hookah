@@ -4,7 +4,6 @@ import AmountBtn from './AmountBtn/AmountBtn';
 import Sliderr from './AmountSlider/AmountSlider';
 
 export default function AmountHookahs() {
-
     return (
         <section className={styles.AmountHookahsSection}>
             <h2 className={styles.title}>Choose how many hookahs you need</h2>
@@ -12,9 +11,7 @@ export default function AmountHookahs() {
                 This online calculator will show your order price depending on
                 required event duration
             </h6>
-            <div className={styles.buttons}>
-                <AmountBtn />
-            </div>
+            <AmountBtn />
             <hr className={styles.hr} />
             <div className={styles.calcDiv}>
                 <Sliderr />

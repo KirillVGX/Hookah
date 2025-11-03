@@ -7,29 +7,34 @@ export default function AboutService() {
                 <h1 className={styles.title}>
                     <span className={styles.highlight}>What</span> is it?
                 </h1>
-                <div className={styles.about}>
-                    <h6 className={styles.desciption}>
-                        Our company offers all-inclusive hookah catering service
-                        for all kinds of events. We serve Miami, Fort
-                        Lauderdale, the Keys, Palm Beach and surrounding areas.
-                        Our hookah service is a perfect addition to any kind of
-                        Private parties, Social or Corporate/Business events.
-                    </h6>
-                    <p className={styles.desciptionBold}>
-                        We bring everything needed including the hookahs,
-                        tobacco, charcoal and mouthpieces to your event. Our
-                        hookah master remains onsite to service the hookahs for
-                        the duration of your party.
-                    </p>
+                <div className={styles.descriptionWrapper}>
+                    <div className={styles.about}>
+                        <h6 className={styles.desciption}>
+                            Our company offers all-inclusive hookah catering
+                            service for all kinds of events. We serve Miami,
+                            Fort Lauderdale, the Keys, Palm Beach and
+                            surrounding areas. Our hookah service is a perfect
+                            addition to any kind of Private parties, Social or
+                            Corporate/Business events.
+                        </h6>
+                        <p className={styles.desciptionBold}>
+                            We bring everything needed including the hookahs,
+                            tobacco, charcoal and mouthpieces to your event. Our
+                            hookah master remains onsite to service the hookahs
+                            for the duration of your party.
+                        </p>
+                    </div>
+                    <div className={styles.slideInner}>
+                        <h4 className={styles.slide}>
+                            We do all the work, so you can relax,
+                            <span className={styles.highlight}>
+                                {' '}
+                                enjoying your party and clouds of smoke with our
+                                hookah!
+                            </span>
+                        </h4>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.slideInner}>
-                <h4 className={styles.slide}>
-                    We do all the work, so you can relax,
-                    <span className={styles.highlight}>
-                        enjoying your party and clouds of smoke with our hookah!
-                    </span>
-                </h4>
             </div>
         </section>
     );

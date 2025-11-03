@@ -41,25 +41,40 @@ export default function AmountBtn() {
     }, []);
 
     return (
-        <>
-            {buttons.map((btn) => (
-                <div
-                    className={styles.button}
-                    key={btn.id}
-                >
-                    <button
-                        className={`${styles.amountBtn} ${
-                            activeId === btn.id ? styles.active : ''
-                        }`}
-                        onClick={() => setActiveId(btn.id)}
+        <div className={styles.block}>
+            <div className={styles.buttons}>
+                {buttons.map((btn) => (
+                    <div
+                        className={styles.button}
+                        key={btn.id}
                     >
-                        {btn.btnTxt}
-                    </button>
+                        <button
+                            className={`${styles.amountBtn} ${
+                                activeId === btn.id ? styles.active : ''
+                            }`}
+                            onClick={() => setActiveId(btn.id)}
+                        >
+                            <span className={styles.amountBtnText}>
+                                {btn.id === 5 && width <= 1225
+                                    ? '15 and more'
+                                    : btn.btnTxt}
+                            </span>
+                        </button>
+                        <p className={styles.desciptionBtn}>
+                            {width > 1225 && <p>{btn.btnD}</p>}
+                        </p>
+                    </div>
+                ))}
+            </div>
+            {width <= 1225 && (
+                <>
                     <p className={styles.desciptionBtn}>
-                        {width > 768 && <p>{btn.btnD}</p>}
+                        Good for parties up to 15
+                        <br />
+                        Served by 1 hookah attendants.
                     </p>
-                </div>
-            ))}
-        </>
+                </>
+            )}
+        </div>
     );
 }
