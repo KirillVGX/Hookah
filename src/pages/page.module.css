@@ -17,3 +17,15 @@
     width: 100%;
     background: #eaeaea;
 }
+
+@media (max-width: 1225px) {
+    .main {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        margin-bottom: 30px;
+    }
+}

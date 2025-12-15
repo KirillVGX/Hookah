@@ -8,21 +8,16 @@ import Reason from '../components/delivery/Reason/Reason';
 import Features from '../components/delivery/Features/Features';
 import ChoosePackage from '../components/delivery/ChoosePackage/ChoosePackage';
 
-import Footer from '../components/footer/Footer';
-
-export default function App() {
+export default function Delivery() {
     return (
-        <>
-            <main className={styles.main}>
-                <Instruction />
-                <HowWorks />
-                <Gets className={styles.gets} />
-                <Covid />
-                <Reason />
-                <Features />
-                <ChoosePackage />
-            </main>
-            <Footer />
-        </>
+        <main className={styles.main}>
+            <Instruction />
+            <HowWorks />
+            <Gets className={styles.gets} />
+            <Covid />
+            <Reason />
+            <Features />
+            <ChoosePackage />
+        </main>
     );
 }

@@ -1,8 +1,13 @@
+import { useEffect } from 'react';
 import styles from './amountSlider.module.css';
 import { useSlider } from '../../../../hooks/useSlider';
 
-export default function Slider() {
+export default function Slider({ onSelect }) {
     const { sliderRef, thumbRef, fillRef, value } = useSlider(5);
+
+    useEffect(() => {
+        onSelect?.(value);
+    }, [value, onSelect]);
 
     return (
         <div className={styles.amountCatering}>
@@ -12,6 +17,7 @@ export default function Slider() {
                 </h6>
                 <h6 className={styles.hours}>{value} hours</h6>
             </div>
+
             <div
                 ref={sliderRef}
                 className={styles.slider}

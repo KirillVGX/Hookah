@@ -6,31 +6,36 @@ const buttons = [
         id: 1,
         btnTxt: '3 hookahs',
         btnD: 'Good for parties up to 15 Served by 1 hookah attendants.',
+        price: 150,
     },
     {
         id: 2,
         btnTxt: '5 hookahs',
         btnD: 'Good for parties up to 30 Served by 2hookah attendants.',
+        price: 250,
     },
     {
         id: 3,
         btnTxt: '7 hookahs',
         btnD: 'Good for parties up to 45 Served by 3 hookah attendant.',
+        price: 350,
     },
     {
         id: 4,
         btnTxt: '9 hookahs',
         btnD: 'Good for parties up to 60 Served by 4 hookah attendants.',
+        price: 450,
     },
     {
         id: 5,
         btnTxt: '15 and more hookahs',
         btnD: 'Good for parties up to 75 Served by 5 hookah attendants.',
+        price: 650,
     },
 ];
 
-export default function AmountBtn() {
-    const [activeId, setActiveId] = useState(null);
+export default function AmountBtn({ onSelect }) {
+    const [activeId, setActiveId] = useState(3);
     const [width, setWidth] = useState(window.innerWidth);
 
     useEffect(() => {
@@ -52,7 +57,10 @@ export default function AmountBtn() {
                             className={`${styles.amountBtn} ${
                                 activeId === btn.id ? styles.active : ''
                             }`}
-                            onClick={() => setActiveId(btn.id)}
+                            onClick={() => {
+                                setActiveId(btn.id);
+                                onSelect(btn.price); 
+                            }}
                         >
                             <span className={styles.amountBtnText}>
                                 {btn.id === 5 && width <= 1225

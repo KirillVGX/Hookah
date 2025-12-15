@@ -1,8 +1,8 @@
 .advantagesSection {
     display: flex;
     flex-direction: column;
-    padding-block: 0 90px;
-    gap: 49px;
+    padding-block: 0 140px;
+    gap: 50px;
 }
 
 .head {
@@ -52,9 +52,7 @@
     text-align: center;
     font-family: 'Montserrat Alternates';
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .hr {
@@ -123,5 +121,72 @@
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
-    line-height: 140%; 
+    line-height: 140%;
+}
+
+@media (max-width: 1225px) {
+    .advantagesSection {
+        padding-inline: 39px;
+        padding-block: 0 80px;
+    }
+
+    .head {
+        gap: 27px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .infoBlock {
+        width: 210px;
+        border-radius: 10px;
+        padding-block: 16px;
+    }
+
+    .stat {
+        font-size: 20px;
+    }
+
+    .statText {
+        max-width: 180px;
+        font-size: 14px;
+    }
+
+    .featuresBlock {
+        grid-template-columns: 1fr;
+    }
+
+    .featureInfo {
+        max-width: 606px;
+    }
+}
+
+@media (max-width: 768px) {
+    .advantagesSection {
+        padding-inline: 10px;
+        padding-block: 0 40px;
+        align-items: center;
+    }
+
+    .head {
+        gap: 24px;
+    }
+
+    .info {
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .feature {
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    .featureText,
+    .featureDesciption {
+        text-align: center;
+    }
 }

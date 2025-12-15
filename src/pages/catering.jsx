@@ -8,23 +8,18 @@ import Advantages from '../components/catering/OurAdvantages/Advantages';
 import Gallery from '../components/catering/Gallery/Gallery';
 import ContactUs from '../components/catering/ContactUs/ContactUs';
 
-import Footer from '../components/footer/Footer'
-
 export default function Catering() {
     return (
-        <>
-            <main className={styles.main} style={{marginBottom: '150px'}}>
-                <AboutService />
-                <hr className={styles.hr} />
-                <HowWorksCatering />
-                <AmountHookahs />
-                <Inclusions />
-                <Advantages />
-                <Gallery />
-                <hr className={styles.hr} />
-                <ContactUs />
-            </main>
-            <Footer />
-        </>
+        <main className={styles.main}>
+            <AboutService />
+            <hr className={styles.hr} />
+            <HowWorksCatering />
+            <AmountHookahs />
+            <Inclusions />
+            <Advantages />
+            <Gallery />
+            <hr className={styles.hr} />
+            <ContactUs />
+        </main>
     );
 }

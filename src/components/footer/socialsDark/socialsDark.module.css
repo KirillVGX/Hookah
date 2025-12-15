@@ -76,4 +76,16 @@
     max-width: 170px;
     width: 100%;
     z-index: 1;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 768px) {
+    .socials {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .viberInner {
+        order: -1;
+    }
 }

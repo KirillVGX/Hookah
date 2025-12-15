@@ -79,3 +79,36 @@
     grid-column: 4;
     grid-row: 2;
 }
+
+@media (max-width: 1225px) {
+    .gallerySection {
+        padding-inline: 39px;
+    }
+
+    .gallery {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallerySection {
+        align-items: center;
+        gap: 25px;
+    }
+
+    .titleBox {
+        display: contents;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .button {
+        order: 1;
+    }
+
+    .gallery {
+        gap: 8px;
+    }
+}

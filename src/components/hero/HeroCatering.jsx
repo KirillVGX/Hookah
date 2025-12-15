@@ -16,7 +16,8 @@ export default function HeroCatering() {
             </div>
             <div className={styles.imageInner}>
                 <img
-                    className={`${styles.image} ${styles.imageCatering}`}
+                    className={styles.image}
+                    style={{ position: 'absolute', bottom: '10px' }}
                     src="./images/header/heroCatering.png"
                     alt="hookah"
                 />

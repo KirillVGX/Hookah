@@ -4,8 +4,8 @@ export default function Button({ isActive, onChange, className }) {
     return (
         <div className={[styles.buttonContainer, className].join(' ')}>
             <button
-                className={`${styles.tabButton} ${isActive === 'main' ? styles.tabButtonActive : ''}`}
-                onClick={() => onChange('main')}
+                className={`${styles.tabButton} ${isActive === 'delivery' ? styles.tabButtonActive : ''}`}
+                onClick={() => onChange('delivery')}
             >
                 HOOKAH RENTALS<br /> & DELIVERY
             </button>

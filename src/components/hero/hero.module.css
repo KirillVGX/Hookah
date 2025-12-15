@@ -1,8 +1,27 @@
 .hero {
+    min-width: 1536px;
+    width: 100%;
+    min-height: 805px;
+    height: 100%;
+
+    background-image: linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.4) 0%,
+            rgba(21, 21, 21, 0.3) 78%
+        ),
+        url('./images/header/bg.png');
+
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+    color: white;
+    position: relative;
+
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
-    width: 100%;
     flex: 1;
 }
 
@@ -39,21 +58,21 @@
 }
 
 .imageInner {
-    position: relative;
+    /* position: relative; */
     width: 50%;
 }
 
 .image {
     position: absolute;
-    top: -130px;
-    left: 60px;
+    right: 0px;
+    top: -40px;
     z-index: 0;
     pointer-events: none;
 }
 
 .imageCatering {
-    transform: scale(1.1);
-    top: -5%;
+    position: absolute;
+    bottom: 10%;
 }
 
 @media (max-width: 1225px) {
@@ -72,9 +91,9 @@
         position: relative;
     }
 
-    .imageInner {
+    /* .imageInner {
         position: absolute;
-    }
+    } */
 
     .content {
         justify-content: start;

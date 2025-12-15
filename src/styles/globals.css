@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    align-items: center;
 }
 
 a {
