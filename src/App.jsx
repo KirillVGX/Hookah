@@ -9,17 +9,17 @@ import TabsSection from './components/header/headerNav/tabsSection/TabsSection';
 import Footer from './components/footer/Footer';
 
 export default function App() {
-    const [tab, setTab] = useState('catering');
+    const [tab, setTab] = useState('delivery');
 
     return (
         <>
-            <Header>
+            {/* <Header>
                 <TabsSection
                 isActive={tab}
                 onChange={(current) => setTab(current)}
                 className={styles.tabsSection}
                 />
-                </Header>
+            </Header> */}
 
             {tab === 'delivery' && <Hero />}
             {tab === 'catering' && <HeroCatering />}
@@ -27,7 +27,7 @@ export default function App() {
             {tab === 'delivery' && <Delivery />}
             {tab === 'catering' && <Catering />}
 
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }

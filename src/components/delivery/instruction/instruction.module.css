@@ -10,7 +10,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    /* max-width: 270px; */
     width: 100%;
     min-height: 130px;
     justify-content: space-between;
@@ -32,7 +31,7 @@
     max-width: 400px;
 }
 
-.block:nth-child(3) .description {
+.block:last-child .description {
     font-family: 'Montserrat Alternates';
     font-size: 24px;
     font-weight: 700;
@@ -62,9 +61,18 @@
     font-weight: 700;
 }
 
+.hr {
+    display: none;
+    height: 1px;
+    width: 110%;
+    background-color: #eaeaea;
+    opacity: 0.7;
+    margin-left: -10px;
+}
+
 @media (max-width: 1225px) {
     .instruction {
-        margin-inline: 39px;
+        padding-inline: 39px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
@@ -87,5 +95,50 @@
     .description {
         height: fit-content;
         font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .instruction {
+        display: flex;
+        flex-direction: column;
+        width: clamp(200px, calc(100vw - 20px), 500px);
+        padding-inline: 0;
+        max-width: none;
+        gap: 22px;
+        padding-block: 29px 15px;
+    }
+
+    .block {
+        width: 100%;
+        max-width: none;
+        justify-content: start;
+    }
+
+    .block:last-child .description {
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .block:last-child .number {
+        display: none;
+    }
+
+    .number {
+        max-width: 20px;
+        max-height: 20px;
+    }
+
+    .numberText {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 12px;
+    }
+
+    .hr {
+        display: block;
     }
 }

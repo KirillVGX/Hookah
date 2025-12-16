@@ -66,7 +66,7 @@
 
 @media (max-width: 1225px) {
     .howWorks {
-        margin-inline: 39px;
+        padding-inline: 39px;
         padding-block: 60px 90px;
     }
 
@@ -84,5 +84,15 @@
 
     .description {
         font-style: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .howWorks {
+        padding: 60px 10px;
+    }
+
+    .howWorkElement {
+        max-width: clamp(200px, calc(100vw - 20px), 400px);
     }
 }

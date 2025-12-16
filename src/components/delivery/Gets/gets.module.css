@@ -1,11 +1,10 @@
 .getSection {
-    max-width: 100vw;
+    min-width: 1536px;
     width: 100%;
-    min-height: 100vh;
+    min-height: 805px;
     height: 100%;
 
-    background:
-        linear-gradient(
+    background: linear-gradient(
             to bottom,
             hsla(0, 0%, 100%, 0.94),
             hsla(0, 0%, 100%, 0.74)
@@ -74,7 +73,6 @@
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    /* картинка сохраняет пропорции */
 }
 
 .description {
@@ -124,9 +122,7 @@
     color: #fff;
     font-family: 'Montserrat Alternates';
     font-size: 22px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 @media (max-width: 1225px) {
@@ -152,13 +148,49 @@
     }
 }
 
-@media (max-width: 768px ) {
+@media (max-width: 768px) {
+    .getSection {
+        gap: 40px;
+        padding-top: 20px;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .grid {
+        display: contents;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-inline: 10px;
+    }
+
+    .description {
+        max-height: none;
+        height: fit-content;
+    }
+
     .order {
-        max-width: 690px;
-        
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        max-height: none;
+        height: fit-content;
+        width: clamp(100px, calc(50vw - 10px), 300px);
+        margin: 0 auto;
+        padding: 27px 8px 20px 8px;
     }
 
     .label {
-        font-size: 18px;
+        text-align: center;
+    }
+
+    .productCard {
+        width: clamp(100px, calc(50vw - 10px), 374px);
+        align-items: center;
     }
 }

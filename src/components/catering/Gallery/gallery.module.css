@@ -94,6 +94,7 @@
     .gallerySection {
         align-items: center;
         gap: 25px;
+        padding-inline: 10px;
     }
 
     .titleBox {

@@ -31,7 +31,7 @@ export default function AmountHookahs() {
                     </h2>
                 </div>
             </div>
-            <hr className={styles.hr} />
+            <hr className={`${styles.hr} ${styles.hrBottom}`} />
             <HeroButton
                 text="Order hookah catering"
                 maxWidth="329px"

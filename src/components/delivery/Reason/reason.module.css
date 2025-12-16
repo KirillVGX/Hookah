@@ -2,8 +2,7 @@
     display: flex;
     flex-direction: column;
     gap: 55px;
-    padding-block: 90px;
-    padding-inline: 40px;
+    padding-block: 90px 40px;
 }
 
 .head {
@@ -86,6 +85,11 @@
 }
 
 @media (max-width: 1225px) {
+    .reasonSection {
+        gap: 40px;
+        padding-block: 80px;
+    }
+
     .head {
         font-size: 36px;
     }
@@ -100,14 +104,31 @@
 }
 
 @media (max-width: 768px) {
+    .reasonSection {
+        gap: 24px;
+        padding-block: 80px 55px;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .head {
+        font-size: 24px;
+    }
+
     .reason {
-        max-width: 210px;
+        max-width: calc(100vw - 20px);
+        gap: 16px;
+    }
+
+    .imgWrapper {
+        margin-bottom: 10px;
     }
 
     .title {
-        min-height: 72px;
-        max-height: none;
-        /* height: min-content; */
         height: fit-content;
         font-size: 16px;
     }

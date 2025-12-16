@@ -1,6 +1,5 @@
 import styles from './header.module.css'
 
-import TabsSection from './headerNav/tabsSection/TabsSection';
 import Socials from './headerNav/socials/Socials';
 
 export default function Header({ children }) {

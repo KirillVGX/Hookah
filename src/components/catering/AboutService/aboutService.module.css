@@ -71,18 +71,27 @@
     .AboutServiceSection {
         flex-direction: column;
         row-gap: 20px;
-        padding-block: 60px;
+        padding-block: 40px 30px;
         padding-inline: 0;
+        max-width: clamp(200px, calc(100vw - 20px) , 600px);
+    }
+
+    .title {
+        font-size: 24px;
     }
 
     .aboutWrapper {
         display: contents;
         max-width: none;
     }
+
+    .about {
+        gap: 10px;
+    }
     
     .descriptionWrapper {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
     }
 
     .slideInner {
@@ -90,15 +99,19 @@
         width: 100%;
     }
 
+    .slide {
+        font-size: 20px;
+    }
+
     .title {
         font-size: 36px;
     }
 
     .desciption {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .desciptionBold {
-        font-size: 15px;
+        font-size: 12px;
     }
 }

@@ -12,9 +12,9 @@ const products = [
     { id: 9, img: './images/gets/9.svg', text: 'Disposable Hose' },
 ];
 
-export default function Gets({ className }) {
+export default function Gets() {
     return (
-        <section className={`${styles.getSection} ${className}`}>
+        <section className={styles.getSection}>
             <p className={styles.title}>
                 What you’ll <span className={styles.selector}>get</span>:
             </p>

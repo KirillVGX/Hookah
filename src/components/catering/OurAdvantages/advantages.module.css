@@ -165,7 +165,7 @@
 @media (max-width: 768px) {
     .advantagesSection {
         padding-inline: 10px;
-        padding-block: 0 40px;
+        padding-block: 0 50px;
         align-items: center;
     }
 
@@ -177,6 +177,11 @@
         flex-wrap: wrap;
         justify-content: center;
         width: 100%;
+        gap: 15px;
+    }
+
+    .infoBlock {
+        width: calc(100vw - 20px);
     }
 
     .feature {
@@ -188,5 +193,10 @@
     .featureText,
     .featureDesciption {
         text-align: center;
+        font-size: 16px;
+    }
+
+    .featureDesciption {
+        font-size: 14px;
     }
 }

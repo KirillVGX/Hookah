@@ -25,6 +25,7 @@ export default function Instruction() {
                     </span>
                 </div>
             ))}
+            <hr className={styles.hr} />
             <div className={styles.block}>
                 <h5 className={styles.description}>
                     All you'll have to do is to relax, enjoying the hookah!

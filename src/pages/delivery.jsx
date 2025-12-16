@@ -13,7 +13,7 @@ export default function Delivery() {
         <main className={styles.main}>
             <Instruction />
             <HowWorks />
-            <Gets className={styles.gets} />
+            <Gets />
             <Covid />
             <Reason />
             <Features />
