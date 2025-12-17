@@ -2,49 +2,7 @@ import styles from './amountBtn.module.css';
 import { useState, useRef, useEffect } from 'react';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
 import AmountList from './AmountList/AmountList';
-
-const buttons = [
-    {
-        id: 1,
-        btnTxt: '3 hookahs',
-        btnD: 'Good for parties up to 15 Served by 1 hookah attendants.',
-        amountD: 'Good for parties up to 15',
-        servedD: 'Served by 1 hookah attendants.',
-        price: 150,
-    },
-    {
-        id: 2,
-        btnTxt: '5 hookahs',
-        btnD: 'Good for parties up to 30 Served by 2hookah attendants.',
-        amountD: 'Good for parties up to 30',
-        servedD: 'Served by 2 hookah attendants.',
-        price: 250,
-    },
-    {
-        id: 3,
-        btnTxt: '7 hookahs',
-        btnD: 'Good for parties up to 45 Served by 3 hookah attendant.',
-        amountD: 'Good for parties up to 45',
-        servedD: 'Served by 3 hookah attendants.',
-        price: 350,
-    },
-    {
-        id: 4,
-        btnTxt: '9 hookahs',
-        btnD: 'Good for parties up to 60 Served by 4 hookah attendants.',
-        amountD: 'Good for parties up to 60',
-        servedD: 'Served by 4 hookah attendants.',
-        price: 450,
-    },
-    {
-        id: 5,
-        btnTxt: '15 and more hookahs',
-        btnD: 'Good for parties up to 75 Served by 5 hookah attendants.',
-        amountD: 'Good for parties up to 75',
-        servedD: 'Served by 5 hookah attendants.',
-        price: 650,
-    },
-];
+import { buttons } from '@/data/buttons';
 
 export default function AmountBtn({ onSelect }) {
     const isTablet = useMediaQuery('(max-width: 768px)');

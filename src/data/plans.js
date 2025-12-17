@@ -1,0 +1,32 @@
+export const plans = [
+    {
+        id: 1,
+        src: './images/plans/1.svg',
+        title: '1 hookah',
+        bonus: '+ 3 tobacco filled fruit heads',
+        description: '1 complete hookah set with all needed accessories',
+        price: 75,
+        additional: 30,
+        buttonTxt: 'Order 1 hookah',
+    },
+    {
+        id: 2,
+        src: './images/plans/2.svg',
+        title: '2 hookah',
+        bonus: '+ 6 tobacco filled fruit heads',
+        description: '2 complete hookah set with all needed accessories',
+        price: 120,
+        additional: 50,
+        buttonTxt: 'Order 2 hookah',
+    },
+    {
+        id: 3,
+        src: './images/plans/3.svg',
+        title: '3 hookah',
+        bonus: '+ 9 tobacco filled fruit heads',
+        description: '3 complete hookah set with all needed accessories',
+        price: 160,
+        additional: 70,
+        buttonTxt: 'Order 3 hookah',
+    },
+];

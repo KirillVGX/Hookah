@@ -1,23 +1,41 @@
+import { lazy, Suspense } from 'react';
 import styles from './page.module.css';
+import Reveal from '@/components/reveal/Reveal.jsx';
 
-import Instruction from '@/components/delivery/instruction/Instruction';
-import HowWorks from '@/components/delivery/HowWorks/HowWorks';
-import Gets from '@/components/delivery/Gets/Gets';
-import Covid from '@/components/delivery/Covid/Covid';
-import Reason from '@/components/delivery/Reason/Reason';
-import Features from '@/components/delivery/Features/Features';
-import ChoosePackage from '@/components/delivery/ChoosePackage/ChoosePackage';
+const Instruction = lazy(() => import('@/components/delivery/instruction/Instruction'));
+const HowWorks = lazy(() => import('@/components/delivery/HowWorks/HowWorks'));
+const Gets = lazy(() => import('@/components/delivery/Gets/Gets'));
+const Covid = lazy(() => import('@/components/delivery/Covid/Covid'));
+const Reason = lazy(() => import('@/components/delivery/Reason/Reason'));
+const Features = lazy(() => import('@/components/delivery/Features/Features'));
+const ChoosePackage = lazy(() => import('@/components/delivery/ChoosePackage/ChoosePackage'));
 
 export default function Delivery() {
     return (
         <main className={styles.main}>
-            <Instruction />
-            <HowWorks />
-            <Gets />
-            <Covid />
-            <Reason />
-            <Features />
-            <ChoosePackage />
+            <Suspense fallback={<div className={styles.loader}>Loading...</div>}>
+                <Reveal>
+                    <Instruction />
+                </Reveal>
+                <Reveal>
+                    <HowWorks />
+                </Reveal>
+                <Reveal>
+                    <Gets />
+                </Reveal>
+                <Reveal>
+                    <Covid />
+                </Reveal>
+                <Reveal>
+                    <Reason />
+                </Reveal>
+                <Reveal>
+                    <Features />
+                </Reveal>
+                <Reveal>
+                    <ChoosePackage />
+                </Reveal>
+            </Suspense>
         </main>
     );
 }

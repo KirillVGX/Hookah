@@ -1,84 +1,8 @@
 import styles from './features.module.css';
 import { useState } from 'react';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
-
-const features = [
-    {
-        id: 1,
-        alt: 'free',
-        src: './images/features/1.svg',
-        text: 'Free delivery in Miami and Fort Lauderdale',
-    },
-    {
-        id: 2,
-        alt: 'truck',
-        src: './images/features/2.svg',
-        text: 'Fast delivery. Most of deliveries take less than 90 minutes.',
-    },
-    {
-        id: 3,
-        alt: 'settings',
-        src: './images/features/3.svg',
-        text: 'Free setup - we will set up the hookah for you ',
-    },
-    {
-        id: 4,
-        alt: 'deposit',
-        src: './images/features/4.svg',
-        text: 'No deposit - no need to give us extra money',
-    },
-    {
-        id: 5,
-        alt: 'acai',
-        src: './images/features/5.svg',
-        text: '60+ Tobacco flavors to choose from',
-    },
-    {
-        id: 6,
-        alt: 'tobacco',
-        src: './images/features/6.svg',
-        text: 'Premium tobacco brands: Al-Fakher, Starbuzz, Tangiers, Adalya',
-    },
-    {
-        id: 7,
-        alt: 'hookah',
-        src: './images/features/7.svg',
-        text: 'High quality hookahs, always clean and taut',
-    },
-    {
-        id: 8,
-        alt: 'charcoal',
-        src: './images/features/8.svg',
-        text: 'Highest-quality natural coconut charcoals.',
-    },
-];
-
-const reviews = [
-    {
-        id: 1,
-        alt: 'user photo',
-        photo: './images/photo.svg',
-        name: 'Matthew',
-        stars: 5,
-        review: 'I got incredible pleasure smoking a hookah. Thanks to Hookah Puff team for perfect service! That was great',
-    },
-    {
-        id: 2,
-        alt: 'user photo',
-        photo: './images/photo.svg',
-        name: 'Matthew',
-        stars: 4,
-        review: 'I got incredible pleasure smoking a hookah. Thanks to Hookah Puff team for perfect service! That was great',
-    },
-    {
-        id: 3,
-        alt: 'user photo',
-        photo: './images/photo.svg',
-        name: 'Matthew',
-        stars: 3,
-        review: 'I got incredible pleasure smoking a hookah. Thanks to Hookah Puff team for perfect service! That was great',
-    },
-];
+import { features } from '@/data/features';
+import { reviews } from '@/data/reviews';
 
 export default function Features() {
     const isLaptop = useMediaQuery('(max-width: 1225px)');
