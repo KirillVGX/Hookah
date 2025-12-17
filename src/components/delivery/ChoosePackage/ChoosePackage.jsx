@@ -1,5 +1,5 @@
 import styles from './choosePackage.module.css';
-import HeroButton from '../../hero/heroButton/HeroButton';
+import HeroButton from '@/components/hero/heroButton/HeroButton';
 
 const plans = [
     {

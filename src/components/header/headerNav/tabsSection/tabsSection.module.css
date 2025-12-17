@@ -21,7 +21,7 @@
     text-align: center;
     font-family: Montserrat;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 800;
     text-transform: uppercase;
 }
 
@@ -30,16 +30,115 @@
 }
 
 .tabButtonActive {
-    background: #9B51E0;
+    background: #9b51e0;
     max-height: 70px;
     box-shadow: 0 12px 28px rgba(155, 81, 224, 0.7);
     transform: translateY(-2px);
     transition: all 0.3s ease;
 }
 
-@media (max-width: 768px) {
-    .tabButton {
-        max-width: 210px;
-        max-height: 54px;
+/* TEST */
+
+.dropdown {
+    position: relative;
+    width: 220px;
+    z-index: 5;
+}
+
+.dropdownButton {
+    width: 100%;
+    height: 60px;
+    padding: 14px 16px;
+    cursor: pointer;
+    max-width: 220px;
+
+    border: none;
+    border-radius: 0 0 10px 10px;
+
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 900;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+
+    background: #9b51e0;
+    box-shadow: 0 12px 28px rgba(155, 81, 224, 0.7);
+    position: absolute;
+    /* left: calc(66% + 59px); */
+    left: calc(100vw - 140px);
+    top: 135%;
+}
+
+.btnText {
+    margin: 0;
+    transform: rotate(180deg);
+    font-size: 14px;
+}
+
+.arrow {
+    font-size: 12px;
+    margin-left: 8px;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+
+/* меню */
+.dropdownMenu {
+    position: absolute;
+    right: 80%;
+    top: 0;
+    /* right: 0; */
+    /* transform: rotate(90deg); */
+
+    background: #2f2f2f;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* пункты */
+.dropdownMenu button {
+    width: 100%;
+    padding: 14px 16px;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    transition: all 0.2s ease;
+}
+
+.dropdownMenu button:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* активный пункт */
+.dropdownMenuActive {
+    background: rgba(155, 81, 224, 0.25);
+}
+
+@media (max-width: 1225px) {
+    .buttonContainer {
+        margin-left: auto;
+        align-self: start;
     }
+}
+
+@media (max-width: 768px) {
 }

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import styles from './amountSlider.module.css';
-import { useSlider } from '../../../../hooks/useSlider';
+import { useSlider } from '@/hooks/useSlider';
 
 export default function Slider({ onSelect }) {
     const { sliderRef, thumbRef, fillRef, value } = useSlider(5);

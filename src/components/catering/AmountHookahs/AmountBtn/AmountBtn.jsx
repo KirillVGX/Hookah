@@ -1,6 +1,6 @@
 import styles from './amountBtn.module.css';
 import { useState, useRef, useEffect } from 'react';
-import { useMediaQuery } from '../../../../hooks/useMediaQuery';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import AmountList from './AmountList/AmountList';
 
 const buttons = [
@@ -102,7 +102,7 @@ export default function AmountBtn({ onSelect }) {
                                 </span>
                             </button>
                             <p className={styles.desciptionBtn}>
-                                {!isLaptop && <p>{btn.btnD}</p>}
+                                {!isLaptop && <span>{btn.btnD}</span>}
                             </p>
                         </div>
                     ))}

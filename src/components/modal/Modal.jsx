@@ -1,4 +1,4 @@
-import { useLockBodyScroll } from '../../hooks/useLockBodyScroll';
+import { useLockBodyScroll } from '@/hooks/useLockBodyScroll';
 import styles from './modal.module.css';
 
 

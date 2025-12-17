@@ -1,18 +1,10 @@
 import styles from './hero.module.css';
 import HeroButton from './heroButton/HeroButton';
-import { useState, useEffect } from 'react';
+import { useMediaQuery } from '../../hooks/useMediaQuery';
 
 export default function Hero() {
-    const [isLarge, setIsLarge] = useState(window.innerWidth > 1225);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsLarge(window.innerWidth > 1225);
-        };
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    const isLaptop = useMediaQuery('(max-width: 1225px)');
+    const isTablet = useMediaQuery('(max-width: 768px)');
 
     return (
         <div className={styles.hero}>
@@ -30,7 +22,7 @@ export default function Hero() {
                 <img
                     className={styles.image}
                     src={
-                        isLarge
+                        isLaptop
                             ? './images/header/hookah.png'
                             : './images/header/hookahM.png'
                     }

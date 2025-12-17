@@ -1,6 +1,6 @@
 import styles from './features.module.css';
 import { useState } from 'react';
-import { useMediaQuery } from '../../../hooks/useMediaQuery';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 const features = [
     {

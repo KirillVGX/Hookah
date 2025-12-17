@@ -1,5 +1,5 @@
 import styles from './amountHookahs.module.css';
-import HeroButton from '../../hero/heroButton/HeroButton';
+import HeroButton from '@/components/hero/heroButton/HeroButton';
 import AmountBtn from './AmountBtn/AmountBtn';
 import Sliderr from './AmountSlider/AmountSlider';
 import { useState } from 'react';

@@ -1,10 +1,13 @@
 import styles from './hero.module.css';
 import HeroButton from './heroButton/HeroButton';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 
 export default function HeroCatering() {
+    const isTablet = useMediaQuery('(max-width: 768px)');
+
     return (
-        <div className={styles.hero}>
-            <div className={styles.content}>
+        <div className={`${styles.hero} ${styles.heroCatering}`}>
+            <div className={`${styles.content} ${styles.contentCatering}`}>
                 <h1 className={styles.mainText}>
                     Hookah catering in Miami and all SoFlo
                 </h1>
@@ -14,14 +17,17 @@ export default function HeroCatering() {
                 </h5>
                 <HeroButton text="Order service" />
             </div>
-            <div className={styles.imageInner}>
-                <img
-                    className={styles.image}
-                    style={{ position: 'absolute', bottom: '10px' }}
-                    src="./images/header/heroCatering.png"
-                    alt="hookah"
-                />
-            </div>
+            {!isTablet && (
+                <div
+                    className={`${styles.imageInner} ${styles.imageInnerCatering}`}
+                >
+                    <img
+                        className={`${styles.image} ${styles.imageCatering}`}
+                        src="./images/header/heroCatering.png"
+                        alt="hookah"
+                    />
+                </div>
+            )}
         </div>
     );
 }

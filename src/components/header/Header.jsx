@@ -1,4 +1,4 @@
-import styles from './header.module.css'
+import styles from './header.module.css';
 
 import Socials from './headerNav/socials/Socials';
 
