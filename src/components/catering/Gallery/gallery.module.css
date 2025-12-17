@@ -43,11 +43,6 @@
     transition: all 0.2s ease;
 }
 
-.button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 16px #f2994a;
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -78,6 +73,13 @@
 .img5 {
     grid-column: 4;
     grid-row: 2;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 16px #f2994a;
+    }
 }
 
 @media (max-width: 1225px) {

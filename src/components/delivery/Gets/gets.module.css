@@ -55,10 +55,6 @@
     transition: all ease 0.3s;
 }
 
-.productCard:hover {
-    transform: scale(1.1);
-}
-
 .imgWrapper {
     display: inline-flex;
     align-items: center;
@@ -113,16 +109,22 @@
     transition: all 0.3s ease;
 }
 
-.order:hover {
-    transform: scale(1.01) translateY(-2px);
-    box-shadow: 0 0 40px #f2994a;
-}
-
 .label {
     color: #fff;
     font-family: 'Montserrat Alternates';
     font-size: 22px;
     font-weight: 700;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .order:hover {
+        transform: scale(1.01) translateY(-2px);
+        box-shadow: 0 0 40px #f2994a;
+    }
+
+    .productCard:hover {
+        transform: scale(1.1);
+    }
 }
 
 @media (max-width: 1225px) {

@@ -54,14 +54,16 @@
     transition: all 0.3s ease;
 }
 
-.howWorkElement:hover {
-    transform: scale(1.1) translateY(-2px);
-    box-shadow: 0 0 24px rgb(185, 182, 182);
-}
+@media (hover: hover) and (pointer: fine) {
+    .howWorkElement:hover {
+        transform: scale(1.1) translateY(-2px);
+        box-shadow: 0 0 24px rgb(185, 182, 182);
+    }
 
-.howWorkElement:hover .description {
-    color: #9b51e0;
-    font-weight: 800;
+    .howWorkElement:hover .description {
+        color: #9b51e0;
+        font-weight: 800;
+    }
 }
 
 @media (max-width: 1225px) {

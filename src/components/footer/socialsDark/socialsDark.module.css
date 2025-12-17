@@ -26,11 +26,6 @@
     transition: all 0.3s ease;
 }
 
-.socialsOrange:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px hsla(28, 87%, 62%, 1);
-}
-
 .socialsItems {
     position: absolute;
     top: 50%;
@@ -55,11 +50,6 @@
     transition: all 0.3s ease;
 }
 
-.viberPuddle:hover {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px hsla(271, 70%, 60%, 1);
-}
-
 .viber {
     min-width: 20px;
     width: 100%;
@@ -77,6 +67,18 @@
     width: 100%;
     z-index: 1;
     text-wrap: nowrap;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .socialsOrange:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 15px hsla(28, 87%, 62%, 1);
+    }
+
+    .viberPuddle:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 15px hsla(271, 70%, 60%, 1);
+    }
 }
 
 @media (max-width: 768px) {

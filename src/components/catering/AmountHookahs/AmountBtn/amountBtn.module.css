@@ -45,18 +45,7 @@
     color: #191919;
 }
 
-.amountBtn:hover {
-    background-color: #f7f3fc;
-    box-shadow: 0 0 12px rgba(155, 81, 224, 0.4);
-    transform: scale(1.04);
-}
-
 .active {
-    background-color: #9b51e0;
-    box-shadow: 0 0 16px #9b51e0;
-}
-
-.active:hover {
     background-color: #9b51e0;
     box-shadow: 0 0 16px #9b51e0;
 }
@@ -93,10 +82,6 @@
     margin-top: 40px;
 }
 
-.list:hover {
-    background-color: #fff;
-}
-
 .openButtonText {
     font-family: 'Montserrat Alternates';
     font-size: 16px;
@@ -111,6 +96,22 @@
 .rotate {
     transform: rotate(90deg);
     transition: transform 0.2s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .list:hover {
+        background-color: #fff;
+    }
+
+    .active:hover {
+        background-color: #9b51e0;
+        box-shadow: 0 0 16px #9b51e0;
+    }
+
+    .amountBtn:hover {
+        box-shadow: 0 0 12px rgba(155, 81, 224, 0.4);
+        transform: scale(1.04);
+    }
 }
 
 @media (max-width: 1225px) {

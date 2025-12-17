@@ -36,11 +36,6 @@
     transition: all 0.6s ease;
 }
 
-.plan:hover {
-    /* transform: scale(1.03) translateY(-3px); */
-    box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
-}
-
 .product {
     display: flex;
     flex-direction: column;
@@ -104,6 +99,13 @@
     width: 100%;
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .plan:hover {
+        /* transform: scale(1.03) translateY(-3px); */
+        box-shadow: 0 30px 40px 0 rgba(0, 0, 0, 0.1);
+    }
+}
+
 @media (max-width: 1225px) {
     .choosePackageSection {
         max-width: calc(100vw - 78px);
@@ -125,7 +127,7 @@
     }
 
     .bonus,
-    .description  {
+    .description {
         font-size: 14px;
     }
 

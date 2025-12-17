@@ -25,10 +25,6 @@
     text-transform: uppercase;
 }
 
-.tabButton:hover {
-    transform: scale(1.03);
-}
-
 .tabButtonActive {
     background: #9b51e0;
     max-height: 70px;
@@ -124,13 +120,15 @@
     transition: all 0.2s ease;
 }
 
-.dropdownMenu button:hover {
-    background: rgba(255, 255, 255, 0.08);
-}
-
 /* активный пункт */
 .dropdownMenuActive {
     background: rgba(155, 81, 224, 0.25);
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .tabButton:hover {
+        transform: scale(1.03);
+    }
 }
 
 @media (max-width: 1225px) {

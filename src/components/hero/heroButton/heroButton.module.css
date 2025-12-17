@@ -8,15 +8,9 @@
     padding-block: 10px;
     color: white;
     border-radius: 30px;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     box-shadow: 0px 0px 30px hsla(28, 87%, 62%, 1);
     cursor: pointer;
-}
-
-.heroButton:hover {
-    background: #ff9f4d; 
-    transform: scale(1.05);
-    box-shadow: 0 0 40px rgba(242, 153, 74, 0.8);
 }
 
 .buttonText {
@@ -26,6 +20,14 @@
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .heroButton:hover {
+        background: #ff9f4d;
+        transform: scale(1.05);
+        box-shadow: 0 0 40px rgba(242, 153, 74, 0.8);
+    }
 }
 
 @media (max-width: 768px) {

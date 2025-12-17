@@ -13,7 +13,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .logoButtons {
@@ -33,8 +32,10 @@ header {
     cursor: pointer;
 }
 
-.logo:hover {
-    transform: scale(1.2);
+@media (hover: hover) and (pointer: fine) {
+    .logo:hover {
+        transform: scale(1.2);
+    }
 }
 
 @media (max-width: 1225px) {
