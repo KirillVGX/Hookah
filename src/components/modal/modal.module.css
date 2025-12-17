@@ -1,22 +1,23 @@
 .overlay {
     position: fixed;
     inset: 0;
-    background: #000; 
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(6px);
     z-index: 20;
     width: 100vw;
     height: 100vh;
-    top: -30px;
-    left: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal {
-    width: 100vw;
-    height: 100vh;
-    padding: 70px 24px;
+    width: 600px;
+    height: auto;
+    padding: 40px 125px 28px 125px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #FFF;
 }
 
 .closeButton {
@@ -44,4 +45,16 @@
 .closeButton img {
     width: 60%;
     height: 60%;
+}
+
+.visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
 }
