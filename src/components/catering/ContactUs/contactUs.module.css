@@ -1,4 +1,4 @@
-.contactUs {
+.contactUsSection {
     display: flex;
     flex-direction: column;
     gap: 9px;
@@ -13,10 +13,6 @@
     font-weight: 900;
 }
 
-.highlight {
-    color: #9b51e0;
-}
-
 .description {
     color: #191919;
     text-align: center;
@@ -27,7 +23,7 @@
 }
 
 @media (max-width: 768px) {
-    .contactUs {
+    .contactUsSection {
         padding-inline: 10px;
     }
 

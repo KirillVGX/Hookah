@@ -9,7 +9,7 @@ export const inclusions = [
                 service
             </>
         ),
-        desc: 'We provide unlimited refills of tobacco, unlimited tendering of charcoals, an unlimited supply of hygienic mouth tips, and an unlimited attention to your guests from our hookah experts.',
+        desc: 'We provide unlimited refills of tobacco, unlimited tendering of charcoals, an unlimited supply of hygienic mouth tips.',
     },
     {
         id: 2,
@@ -45,6 +45,6 @@ export const inclusions = [
                 presentation
             </>
         ),
-        desc: 'Not only our hookahs are highest quality, but also have a beautiful design. Each hookah is illuminated with a led light and in combination with real fruit head looks just awesome.',
+        desc: 'Not only our hookahs are highest quality. Each hookah is illuminated with a led light and in combination with real fruit.',
     },
 ];

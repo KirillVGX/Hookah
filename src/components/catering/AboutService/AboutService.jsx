@@ -5,7 +5,7 @@ export default function AboutService() {
         <section className={styles.AboutServiceSection}>
             <div className={styles.aboutWrapper}>
                 <h1 className={styles.title}>
-                    <span className={styles.highlight}>What</span> is it?
+                    <span className='highlight'>What</span> is it?
                 </h1>
                 <div className={styles.descriptionWrapper}>
                     <div className={styles.about}>
@@ -27,7 +27,7 @@ export default function AboutService() {
                     <div className={styles.slideInner}>
                         <h4 className={styles.slide}>
                             We do all the work, so you can relax,
-                            <span className={styles.highlight}>
+                            <span className='highlight'>
                                 {' '}
                                 enjoying your party and clouds of smoke with our
                                 hookah!

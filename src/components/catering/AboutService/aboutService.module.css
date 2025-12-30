@@ -64,10 +64,6 @@
     line-height: normal;
 }
 
-.highlight {
-    color: #9b51e0;
-}
-
 @media (max-width: 768px) {
     .AboutServiceSection {
         flex-direction: column;

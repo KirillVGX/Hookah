@@ -1,4 +1,4 @@
-.hero {
+.heroSection {
     min-width: 1536px;
     width: 100%;
     height: clamp(805px, 100vh, 960px);
@@ -34,7 +34,7 @@
 .mainText {
     max-width: 478px;
     width: 100%;
-    font-family: Montserrat Alternates;
+    font-family: "Montserrat Alternates";
     font-weight: 700;
     font-size: 42px;
     line-height: 100%;
@@ -76,6 +76,52 @@
     bottom: 0%;
 }
 
+/* MODAL */
+
+.product {
+    display: flex;
+    flex-direction: row;
+    padding: 13px 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    width: 372px;
+    margin-bottom: 25px;
+}
+
+.modalImage {
+    width: 104px;
+    height: 57px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 35px;
+}
+
+.amountHookahs {
+    font-family: 'Montserrat Alternates';
+    font-size: 1
+}
+
+.modalDescription {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.modalPrice {
+    font-family: 'Montserrat Alternates';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #9B51E0;
+    margin-top: 15px;
+}
+
 @media (max-width: 1225px) {
     .image {
         transform: scale(0.8);
@@ -89,7 +135,7 @@
 }
 
 @media (max-width: 768px) {
-    .hero {
+    .heroSection {
         position: relative;
         min-width: 100vw;
         /* align-items: center; */

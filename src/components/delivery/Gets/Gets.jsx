@@ -5,7 +5,7 @@ export default function Gets() {
     return (
         <section className={styles.getSection}>
             <p className={styles.title}>
-                What you’ll <span className={styles.selector}>get</span>:
+                What you’ll <span className='highlight'>get</span>:
             </p>
             <div className={styles.content}>
                 <div className={styles.grid}>

@@ -2,9 +2,9 @@ import styles from './contactUs.module.css';
 
 export default function ContactUs() {
     return (
-        <section className={styles.contactUs}>
+        <section className={styles.contactUsSection}>
             <h4 className={styles.title}>
-                Need something <span className={styles.highlight}>special</span>
+                Need something <span className='highlight'>special</span>
                 ?
             </h4>
             <h6 className={styles.description}>

@@ -6,9 +6,9 @@ export default function HowWorks() {
     const [hoveredId, setHoveredId] = useState(null);
 
     return (
-        <section className={styles.howWorks}>
+        <section className={styles.howWorksSection}>
             <h1 className={styles.title}>
-                How it <span className={styles.selector}>works</span>
+                How it <span className='highlight'>works</span>
             </h1>
             <div className={styles.container}>
                 {steps.map(({ id, Component, description }) => (

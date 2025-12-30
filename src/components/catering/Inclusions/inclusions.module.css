@@ -14,10 +14,6 @@
     font-weight: 700;
 }
 
-.highlight {
-    color: #9b51e0;
-}
-
 .inclusions {
     display: flex;
     flex-direction: row;

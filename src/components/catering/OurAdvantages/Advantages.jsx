@@ -7,7 +7,7 @@ export default function Advantages() {
         <section className={styles.advantagesSection}>
             <div className={styles.head}>
                 <h2 className={styles.title}>
-                    Why choose <span className={styles.highlight}>us</span>
+                    Why choose <span className='highlight'>us</span>
                 </h2>
                 <div className={styles.info}>
                     {info.map((inf) => (

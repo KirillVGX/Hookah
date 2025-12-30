@@ -2,9 +2,8 @@ import styles from './instruction.module.css';
 import { instructions as steps } from '@/data/instructions';
 
 export default function Instruction() {
-
     return (
-        <section className={styles.instruction}>
+        <section className={styles.instructionSection}>
             {steps.map((step) => (
                 <div
                     className={styles.block}

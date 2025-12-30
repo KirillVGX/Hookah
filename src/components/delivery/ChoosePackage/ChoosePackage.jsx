@@ -6,7 +6,7 @@ export default function ChoosePackage() {
     return (
         <section className={styles.choosePackageSection}>
             <h2 className={styles.head}>
-                Choose <span className={styles.selector}>your package</span>
+                Choose <span className='highlight'>your package</span>
             </h2>
             <div className={styles.plansContainer}>
                 {plans.map((plan) => (

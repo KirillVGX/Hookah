@@ -1,3 +1,29 @@
+.selectWrapper {
+    position: relative;
+}
+
+.selectTrigger {
+    width: 100%;
+}
+
+.dropdown {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.listItem {
+    cursor: pointer;
+}
+
+.activeItem {
+    background: #eee;
+}
+
+.required .selectTrigger {
+    border-color: red;
+}
+
 .dropdown {
     position: absolute;
     top: 100%;

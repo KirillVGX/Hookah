@@ -12,10 +12,6 @@
     font-weight: 900;
 }
 
-.selector {
-    color: #9b51e0;
-}
-
 .plansContainer {
     display: flex;
     flex-direction: row;

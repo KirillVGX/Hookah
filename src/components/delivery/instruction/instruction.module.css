@@ -1,4 +1,4 @@
-.instruction {
+.instructionSection {
     display: flex;
     flex-direction: row;
     gap: 60px;
@@ -71,7 +71,7 @@
 }
 
 @media (max-width: 1225px) {
-    .instruction {
+    .instructionSection {
         padding-inline: 39px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -99,7 +99,7 @@
 }
 
 @media (max-width: 768px) {
-    .instruction {
+    .instructionSection {
         display: flex;
         flex-direction: column;
         width: clamp(200px, calc(100vw - 20px), 500px);

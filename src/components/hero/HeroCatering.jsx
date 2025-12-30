@@ -6,7 +6,7 @@ export default function HeroCatering() {
     const isTablet = useMediaQuery('(max-width: 768px)');
 
     return (
-        <div className={`${styles.hero} ${styles.heroCatering}`}>
+        <div className={`${styles.heroSection} ${styles.heroCatering}`}>
             <div className={`${styles.content} ${styles.contentCatering}`}>
                 <h1 className={styles.mainText}>
                     Hookah catering in Miami and all SoFlo

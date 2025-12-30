@@ -5,7 +5,7 @@ export default function Inclusions() {
     return (
         <section className={styles.inclusionsSection}>
             <h2 className={styles.title}>
-                What you’ll <span className={styles.highlight}>get</span>
+                What you’ll <span className='highlight'>get</span>
             </h2>
             <div className={styles.inclusions}>
                 {inclusions.map((arr) => (

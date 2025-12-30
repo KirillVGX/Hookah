@@ -1,4 +1,4 @@
-.howWorks {
+.howWorksSection {
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -13,10 +13,6 @@
     font-style: normal;
     font-weight: 900;
     line-height: normal;
-}
-
-.selector {
-    color: #9b51e0;
 }
 
 .container {
@@ -36,6 +32,7 @@
     min-width: 206px;
     width: 100%;
     padding: 25px;
+    padding-bottom: 50px;
     transition: all 0.3s ease;
     box-shadow: 0 0 24px rgb(224, 220, 220);
 }
@@ -67,7 +64,7 @@
 }
 
 @media (max-width: 1225px) {
-    .howWorks {
+    .howWorksSection {
         padding-inline: 39px;
         padding-block: 60px 90px;
     }
@@ -90,7 +87,7 @@
 }
 
 @media (max-width: 768px) {
-    .howWorks {
+    .howWorksSection {
         padding: 60px 10px;
     }
 

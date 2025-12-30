@@ -6,9 +6,8 @@ import FivethElem from '@/components/delivery/HowWorks/howWorksElements/5/Fiveth
 
 export const steps = [
     {
-        Component: FirstElem,
-        description:
-            'Choose how many hookahs you need and fill out the form with your info',
+        Component: FourthElem,
+        description: 'You pay for the hookah rental. We accept cash.',
         id: 1,
     },
     {
@@ -19,14 +18,13 @@ export const steps = [
     },
     {
         Component: ThirdElem,
-        description:
-            'We deliver ready-to-smoke hookah to you, set it up for you and teach how to keep up good clouds of smoke.',
+        description: 'We deliver ready-to-smoke hookah to you.',
         id: 3,
     },
     {
-        Component: FourthElem,
+        Component: FirstElem,
         description:
-            'You pay for the hookah rental. We accept cash, credit cards and PayPal and Cashapp',
+            'Choose how many hookahs you need and fill out the form with your info',
         id: 4,
     },
     {

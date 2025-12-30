@@ -5,7 +5,7 @@ export default function Reason() {
     return (
         <section className={styles.reasonSection}>
             <h2 className={styles.head}>
-                Why would you <span className={styles.selector}>want it</span>
+                Why would you <span className='highlight'>want it</span>
             </h2>
             <div className={styles.container}>
                 {reasons.map((reason) => (

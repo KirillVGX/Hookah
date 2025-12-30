@@ -8,7 +8,7 @@ export const steps = [
     {
         Component: FirstElem,
         description:
-            'Choose how many hookahs you need and fill out the form with your info',
+            'Choose how many hookahs you need and fill with your info',
         id: 1,
     },
     {
@@ -25,13 +25,13 @@ export const steps = [
     {
         Component: SixthElem,
         description:
-            'During the party, our hookah attendants bring ready-to-smoke hookahs to the tables, change the charcoals and refill the flavors.',
+            'Our hookah attendants bring ready-to-smoke hookahs to the tables.',
         id: 4,
     },
     {
         Component: FourthElem,
         description:
-            'You pay for the hookah rental. We accept cash, credit cards and PayPal and Cashapp',
+            'We accept cash, credit cards and PayPal and Cashapp',
         id: 5,
     },
 ];
